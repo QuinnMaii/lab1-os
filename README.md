@@ -104,6 +104,15 @@ cs:46016
 ![Image](https://github.com/user-attachments/assets/b78cb57a-3198-4b1a-9757-45872e948913)
 
 ![Image](https://github.com/user-attachments/assets/b8f22ffb-32a4-4914-9393-907dae614a1a)
+##### 10 нагрузчиков
+cs:22652
+![image](https://github.com/user-attachments/assets/b933c2c8-1f51-459e-a3bd-898f3c69738b)
+
+![image](https://github.com/user-attachments/assets/21750e9a-4420-4f84-8cf2-844a86462eca)
+![image](https://github.com/user-attachments/assets/5cc3171e-c490-4811-8325-64899f092f7c)
+
+![image](https://github.com/user-attachments/assets/355e664c-7966-4c03-b12a-f0fc2c61e722)
+![image](https://github.com/user-attachments/assets/5c5d6cbc-35d7-4022-92b2-dfddea97157a)
 
 `complex:`
 ##### 1 нагрузчик
@@ -135,14 +144,7 @@ cs:46016
 
 ![Image](https://github.com/user-attachments/assets/91244f10-da11-4e57-952e-14e94d3daade)
 
-##### 10 нагрузчиков
-![image](https://github.com/user-attachments/assets/b933c2c8-1f51-459e-a3bd-898f3c69738b)
 
-![image](https://github.com/user-attachments/assets/21750e9a-4420-4f84-8cf2-844a86462eca)
-![image](https://github.com/user-attachments/assets/5cc3171e-c490-4811-8325-64899f092f7c)
-
-![image](https://github.com/user-attachments/assets/355e664c-7966-4c03-b12a-f0fc2c61e722)
-![image](https://github.com/user-attachments/assets/5c5d6cbc-35d7-4022-92b2-dfddea97157a)
 
 #### С оптимизацией -O3:
 `ema-search-int`
@@ -154,7 +156,7 @@ cs:46016
 ![Image](https://github.com/user-attachments/assets/f10c7e87-3412-41a6-b421-ac117c131af8)
 `complex`
 
-![Image](https://github.com/user-attachments/assets/bae61760-c1f1-4b5b-90a5-1b12e90f4298)#### Доп. нагрузчик
+![Image](https://github.com/user-attachments/assets/bae61760-c1f1-4b5b-90a5-1b12e90f4298)
 
 #### Сравнительный анализ
 - `ema-search-srt` Диск удалось нагрузить только увеличением количества нагрузчиков до 3, но данных по 3 нагрузчикам нет, поэтому анализ ограничен. При увеличении количества нагрузчиков до 2 наблюдалось увеличение cs, но менее значительное, чем ожидалось. USER% выше предполагаемого, но с увеличением нагрузчиков стал меньше относительно SYS%. SYS% - высокий. WAIT% был низким. 
