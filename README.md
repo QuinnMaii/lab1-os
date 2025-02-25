@@ -1,6 +1,6 @@
 ## Операционные системы 
 ### Лабораторная работа №1
-#### Вариант: Windows ema-search-str sort </br>
+#### Вариант: Windows ema-search-int factorize </br>
 #### Задание </br>
 #### Задание Часть 1. Запуск программ </br>
 
@@ -31,7 +31,7 @@
 `ema-search-int`: нагрузка на диск из-за множества операций чтения. Показатель USER% будет низким, потому что программа не выполняет сложных вычислений. 
 SYS% будет высоким, так как системные вызовы (ввод-вывод) занимают значительное время. WAIT% (время ожидания) также будет значительным, так как процесс ожидает завершения операций чтения с диска. </br>
 
-`sort`: USER% будет высоким, так как большая часть времени программы тратится на выполнение вычислений. WAIT% не должен становиться значительным, так как нет работы с диском. SYS% будет низким, так как операции ввода-вывода есть только в начале программы. Из ожидаемых системных вызовов остается только работа с памятью. </br>
+`factorize`: USER% будет высоким, так как большая часть времени программы тратится на выполнение вычислений. WAIT% не должен становиться значительным, так как нет работы с диском. SYS% будет низким, так как операции ввода-вывода есть только в начале программы. Из ожидаемых системных вызовов остается только работа с памятью. </br>
 
 #### Средства мониторинга
 - Resmon – для мониторинга диска.
@@ -39,86 +39,110 @@ SYS% будет высоким, так как системные вызовы (�
 - Диспетчер задач – для мониторинга процессора и диска.
 
 #### Результаты измерений
-`ema-search-str:` 
+`ema-search-int:` 
 ##### 1 нагрузчик
-https://private-user-images.githubusercontent.com/90797542/416029495-dc931c83-f3f9-44ee-a898-ecfecaf20a17.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDA1MDc3MjUsIm5iZiI6MTc0MDUwNzQyNSwicGF0aCI6Ii85MDc5NzU0Mi80MTYwMjk0OTUtZGM5MzFjODMtZjNmOS00NGVlLWE4OTgtZWNmZWNhZjIwYTE3LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTAyMjUlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwMjI1VDE4MTcwNVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTdjOWRjOGVmM2NiNGMwMjRjMTU4OWY5OGJlZWQyMDIwYmJiMjk5OTU3ZDVhYmMyZmUzNDUwMjk2Y2JiZWM0NWYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.yvzSD3upvmbDsI-kPkZ7-UWcPPzS0VpvW7XQph5zH3Y
+![Image](https://github.com/user-attachments/assets/dc931c83-f3f9-44ee-a898-ecfecaf20a17)
 
+![Image](https://github.com/user-attachments/assets/3a60655f-19cf-4cf2-9c6a-55fe0c878a79)
 
-##### 3 нагрузчика
-![image](https://github.com/user-attachments/assets/248c61fc-209f-4f50-bb14-4025642c5c6c)
-![image](https://github.com/user-attachments/assets/a439fa32-0875-4177-ae0d-e234ea5fc0c8)
-![image](https://github.com/user-attachments/assets/bd9da691-f824-468a-8c12-6194a13f05a4)
-![image](https://github.com/user-attachments/assets/128da663-112b-4e0f-9bc2-c8a36f04a8be)
+![Image](https://github.com/user-attachments/assets/21b3157c-03a6-46dc-8787-5aa1d0f37f8d)
 
-##### 5 нагрузчиков
-![image](https://github.com/user-attachments/assets/4edfcdf2-9d82-4df6-87f2-2306b7101dc1)
-![image](https://github.com/user-attachments/assets/39280c9d-48f3-48e7-931e-8ee7cd9cc079)
-![image](https://github.com/user-attachments/assets/8af1379b-de07-4e13-85ab-aeaf888fbec3)
-![image](https://github.com/user-attachments/assets/149a0281-6e8e-4671-823a-cb91d72ddfac)
-
-`sort:`
-##### 1 нагрузчик
-![image](https://github.com/user-attachments/assets/f992008f-ef7e-4371-afc7-ba6e51b99a8b)
-![image](https://github.com/user-attachments/assets/2dd123e4-bc29-4aac-877b-ad9d84c05253)
-![image](https://github.com/user-attachments/assets/17fe6221-9869-46f6-830f-2c15bdeb5f58)
-![image](https://github.com/user-attachments/assets/0cf572d2-91f5-4a4f-9a0b-7c75033f5b7e)
-##### 10 нагрузчиков
-![image](https://github.com/user-attachments/assets/63cea7e0-59c7-40f7-82ea-338de47953b3)
-![image](https://github.com/user-attachments/assets/ce4b6c57-f194-4b68-b400-18738a89bc5f)
-![image](https://github.com/user-attachments/assets/3e4fe686-9bfa-466e-ae99-498df696f464)
-
-А больше 10 запустить не выйдет, ноут не вывозит....
-
-
-`multi-bench:`
-##### 1 нагрузчик
-![image](https://github.com/user-attachments/assets/6e9ed31a-cc2a-4d8c-b433-e2e41eda23c1)
-![image](https://github.com/user-attachments/assets/99a048b9-0ef3-49da-a907-61631daf116b)
-![image](https://github.com/user-attachments/assets/3a5d7abd-6aed-48aa-a3d1-66c180835f29)
-![image](https://github.com/user-attachments/assets/86f8cb89-72da-4c16-ba7c-6fddbbe8902f)
-##### 3 нагрузчика
-![image](https://github.com/user-attachments/assets/93dac60c-04d0-4fbd-a7a0-ea252cb38827)
-![image](https://github.com/user-attachments/assets/5ce8dbe5-b4d0-4b91-a813-04b7a7091a32)
-![image](https://github.com/user-attachments/assets/955e9cbe-ab8a-4244-8403-a93ac70602ff)
-![image](https://github.com/user-attachments/assets/3f1dbe50-520b-4883-ad43-f99d3450d85f)
-##### 5 нагрузчиков
-![image](https://github.com/user-attachments/assets/b1dc4c38-c8fb-4f64-9456-150d6cfbbafc)
-![image](https://github.com/user-attachments/assets/5748efea-95a1-4c6a-9086-99aae3f341fc)
-![image](https://github.com/user-attachments/assets/2ff6b5bd-0976-4cb3-8f19-e88340c9c492)
-![image](https://github.com/user-attachments/assets/3d56decc-7474-4068-9b25-523d352231c0)
-
-#### С оптимизацией:
-`ema-search-str`
-
-![image](https://github.com/user-attachments/assets/acacd58f-d3bd-44ae-8460-300aa18641bd)
-
-`sort`
-
-![image](https://github.com/user-attachments/assets/92e60733-1be4-42b2-a813-863e9a3ea551)
-
-`multi-bench`
-
-![image](https://github.com/user-attachments/assets/6df0c4c0-f06a-4c09-b0b8-2ce7a162a381)
-#### Доп. нагрузчик
-
-`collatz-conjecture:`
-
-##### 1 нагрузчик
-
-![image](https://github.com/user-attachments/assets/2c9d6e42-1854-4801-9676-1b464ca1a536)
-![image](https://github.com/user-attachments/assets/4a9d643e-444e-4f77-a905-8daafdf81e9a)
+![Image](https://github.com/user-attachments/assets/24630c82-f760-42c3-8423-44959ea381d3)
 
 ##### 2 нагрузчика
 
-![image](https://github.com/user-attachments/assets/465a24c3-dff6-4697-b490-15a7ae7bdd1d)
-![image](https://github.com/user-attachments/assets/f0c0f6a3-480c-4ce6-b752-08ed4ae05bc4)
-![image](https://github.com/user-attachments/assets/87a43cde-81a6-42cc-9c0a-0609b54c956e)
+![Image](https://github.com/user-attachments/assets/6d800b3b-5b2c-49e8-8ff0-4fdec08d31f0)
 
+![Image](https://github.com/user-attachments/assets/cfc9bcac-c5bf-4adb-947e-f8c6c87020d9)
+
+![Image](https://github.com/user-attachments/assets/8a959c13-1e00-4378-87e6-86f9cec13be0)
+
+![Image](https://github.com/user-attachments/assets/c4ccbc01-b2ff-45c7-a66e-cb992e3c2dd4)
+
+##### 3 нагрузчиков
+
+![Image](https://github.com/user-attachments/assets/ad78c75a-1b5b-4a52-89e2-c38bdbda53fa)
+
+![Image](https://github.com/user-attachments/assets/2fa2bdab-ad0d-4e2c-bb40-81671d9b6319)
+
+![Image](https://github.com/user-attachments/assets/50b69374-b512-4249-a311-e3cdee7eaff9)
+
+![Image](https://github.com/user-attachments/assets/88e04f65-3256-4a27-9207-5ac640459668)
+
+`factorize:`
+##### 1 нагрузчик
+![Image](https://github.com/user-attachments/assets/de2ba8e3-d4ef-4a72-a9e2-d778e241d6d6)
+
+
+![Image](https://github.com/user-attachments/assets/847eac77-a861-45db-98ef-8d62a30eafad)
+
+![Image](https://github.com/user-attachments/assets/ed2465a4-451e-4b83-9d1c-dd14950ed39d)
+
+![Image](https://github.com/user-attachments/assets/3c3bd801-6fc1-4cc0-ac78-8f9e7366cc4e)
+##### 2 нагрузчиков
+![Image](https://github.com/user-attachments/assets/e176213a-9dfb-479a-a6c9-ac40ced0f79d)
+
+![Image](https://github.com/user-attachments/assets/be8ac0a9-fe23-4803-83a1-088529f5abe5)
+
+![Image](https://github.com/user-attachments/assets/3253ba47-ac38-4247-83d0-1a16fefe4aa4)
+
+![Image](https://github.com/user-attachments/assets/dfaf163d-0f47-4757-b595-b530bfdd6931)
+
+![Image](https://github.com/user-attachments/assets/198f8e1b-9db7-4de4-908f-2c05a4be234b)
+##### 3 нагрузчиков
+![Image](https://github.com/user-attachments/assets/850e70d1-ad35-4a2a-b708-608bdfa22af7)
+
+![Image](https://github.com/user-attachments/assets/162a4b8a-7372-49c4-9bb7-a9b32fbbbd45)
+
+![Image](https://github.com/user-attachments/assets/e3bdd471-9a48-4b44-b8ce-7f4e8e046420)
+
+![Image](https://github.com/user-attachments/assets/b78cb57a-3198-4b1a-9757-45872e948913)
+
+![Image](https://github.com/user-attachments/assets/b8f22ffb-32a4-4914-9393-907dae614a1a)
+
+`complex:`
+##### 1 нагрузчик
+![Image](https://github.com/user-attachments/assets/cd4b5f1a-d079-440a-af87-1eb3851a23f0)
+
+![Image](https://github.com/user-attachments/assets/c26f3dd8-bff1-4513-828f-8b1669fa2dbe)
+
+![Image](https://github.com/user-attachments/assets/cb25fe61-3cc3-451d-a226-388fedd202c9)
+
+![Image](https://github.com/user-attachments/assets/ac6a4c29-643c-4379-94ce-8d9bbc53644b)
 ##### 3 нагрузчика
+![Image](https://github.com/user-attachments/assets/0b43afce-25fc-47bf-89a3-d07fe760172a)
 
-![image](https://github.com/user-attachments/assets/c06791ad-f23f-4195-8010-1eb7d3cac234)
-![image](https://github.com/user-attachments/assets/b530f36f-4b46-4da1-962a-70b06973dba7)
+![Image](https://github.com/user-attachments/assets/afdd2d42-8a73-4e62-82b3-39385732c7e6)
+
+![Image](https://github.com/user-attachments/assets/09f94a1c-68ea-43d6-b0ff-8e597b238cfb)
+
+![Image](https://github.com/user-attachments/assets/540f7883-5c1b-4503-a69a-82fb236e1716)
+
+![Image](https://github.com/user-attachments/assets/63585379-1bee-493b-b829-ef4e6ddc9333)
+##### 5 нагрузчиков
+![Image](https://github.com/user-attachments/assets/d7a59d81-9e9e-4ad9-9706-717ebfa402dd)
+
+![Image](https://github.com/user-attachments/assets/16f6cf70-2a29-465a-a040-7f69af47de80)
+
+![Image](https://github.com/user-attachments/assets/8b994b55-d455-445c-83a9-9d9d8aed30ff)
+
+![Image](https://github.com/user-attachments/assets/eca0918e-ae4c-436e-920c-81c46425a94c)
+
+![Image](https://github.com/user-attachments/assets/91244f10-da11-4e57-952e-14e94d3daade)
+
+#### С оптимизацией -O3:
+`ema-search-int`
+
+![Image](https://github.com/user-attachments/assets/7b792c30-0e69-44c0-b590-3dfd9a58c651)
+
+`factorize`
+
+![Image](https://github.com/user-attachments/assets/f10c7e87-3412-41a6-b421-ac117c131af8)
+.\complex
+`complex`
+
+![Image](https://github.com/user-attachments/assets/bae61760-c1f1-4b5b-90a5-1b12e90f4298)#### Доп. нагрузчик
+
 #### Сравнительный анализ
-- `ema-search-str` Диск удалось нагрузить только увеличением количества нагрузчиков до 3, ощутимый рост нагрузки был отслежен только на 5 нагрузчиках. USER% был выше, чем предполагалось, но с увеличением количества нагрузчиков стал меньше относительно SYS%. SYS% - высокий. WAIT% был низким. 
-- `sort` ЦП нагружался без особых проблем, при попытке запуска 11 нагрузчиков сделать скриншот экрана даже не получилось. SYS%, как и ожидалось, низкий. USER% рос в геометрической прогрессии. На диспетчере задач видно, что при 10 нагрузчиках ЦП был загружен на 100% (это было страшно).
-- `collatz-conjecture`  SYS% - высокий, так как результат вычислений каждого шага выводился на консоль. При увеличении количества нагрузчиков наблюдался рост SYS% и USER%. Однако, USER% был в n раз ниже, чем SYS%.
+- `ema-search-int` Диск удалось нагрузить только увеличением количества нагрузчиков до 3, ощутимый рост нагрузки был отслежен только на 5 нагрузчиках. USER% был выше, чем предполагалось, но с увеличением количества нагрузчиков стал меньше относительно SYS%. SYS% - высокий. WAIT% был низким. 
+- `factorize` ЦП нагружался без особых проблем, при попытке запуска 11 нагрузчиков сделать скриншот экрана даже не получилось. SYS%, как и ожидалось, низкий. USER% рос в геометрической прогрессии. На диспетчере задач видно, что при 10 нагрузчиках ЦП был загружен на 100% (это было страшно).
